@@ -824,3 +824,15 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/posts/1" for 76.186.24.131 at 2019-12-09 20:42:47 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (undefined local variable or method `params' for #<Class:0x00007f44cd9eb128>):
+  
+app/models/post.rb:2:in `<class:Post>'
+app/models/post.rb:1:in `<top (required)>'
+app/controllers/posts_controller.rb:7:in `show'
